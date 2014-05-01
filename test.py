@@ -9,7 +9,12 @@ import StringIO
 out = StringIO.StringIO()
 
 for i in range(8):
-    out.write(subprocess.check_output(['./main', str(i)]))
+    try:
+        output = subprocess.check_output(['./main', str(i)])
+    except subprocess.CalledProcessError as e:
+        print('Error calling binary with argument %d: %s' % (i, e))
+        sys.exit(-1)
+    out.write(output)
 
 with open('expected.txt', 'r') as f:
     if f.read() == out.getvalue():
