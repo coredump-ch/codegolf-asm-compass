@@ -15,4 +15,4 @@ debug: debug.o
 .PHONY: clean
 
 clean:
-	rm -f main.o main
+	rm -f main.o main debug.o debug
