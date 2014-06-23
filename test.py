@@ -8,9 +8,17 @@ import StringIO
 
 out = StringIO.StringIO()
 
+if len(sys.argv) == 1:
+    path = './main'
+elif len(sys.argv) == 2:
+    path = sys.argv[2]
+else:
+    print('Usage: python test.py [path]')
+    sys.exit(-1)
+
 for i in range(8):
     try:
-        output = subprocess.check_output(['./main', str(i)])
+        output = subprocess.check_output([path, str(i)])
     except subprocess.CalledProcessError as e:
         print('Error calling binary with argument %d: %s' % (i, e))
         sys.exit(-1)
