@@ -59,3 +59,18 @@ If you want a binary with debug symbols included, use the `debug` Make target:
     ld -m elf_i386 -O0 -o debug main.o
     $ gdb ./debug
     (gdb) ...
+
+## Docker
+
+You can also verify the code within an isolated
+[Docker](http://www.docker.com/) instance.
+
+    $ docker build -t dbrgn/codegolf
+    ...
+    $ export SRC=/path/to/source/dir
+    $ export FILE=filename.s
+    $ docker run --rm \
+      -v $SRC:/code \
+      -u compass -w /home/compass/codegolf \
+      dbrgn/codegolf \
+      /bin/bash -c "cp /code/$FILE main.s && make && python test.py"
