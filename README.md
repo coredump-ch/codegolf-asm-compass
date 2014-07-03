@@ -65,7 +65,7 @@ If you want a binary with debug symbols included, use the `debug` Make target:
 You can also verify the code within an isolated
 [Docker](http://www.docker.com/) instance.
 
-    $ docker build -t dbrgn/codegolf
+    $ docker build -t dbrgn/codegolf .
     ...
     $ export SRC=/path/to/source/dir
     $ export FILE=filename.s
