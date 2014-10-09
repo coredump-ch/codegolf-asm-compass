@@ -12,6 +12,9 @@ debug.o: main.s
 debug: debug.o
 	ld -m elf_i386 -O0 -o debug main.o
 
+disass: main
+	objdump -M i386,intel-mnemonic -d main
+
 .PHONY: clean
 
 clean:
