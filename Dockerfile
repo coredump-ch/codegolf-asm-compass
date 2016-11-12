@@ -24,6 +24,3 @@ RUN rm -r /root/codegolf
 # Change user and workdir
 USER compass
 WORKDIR /home/compass
-
-# Create volume for code
-VOLUME /code
