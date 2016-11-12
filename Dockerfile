@@ -4,7 +4,7 @@ FROM alpine:3.4
 MAINTAINER Danilo Bargen <mail@dbrgn.ch>
 
 # Install dependencies
-RUN apk add --no-cache nasm make python3 git
+RUN apk add --no-cache nasm make python3 git binutils
 
 # Clone repository
 RUN git clone https://github.com/coredump-ch/codegolf-asm-compass /root/codegolf
