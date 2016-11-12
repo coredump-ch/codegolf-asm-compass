@@ -44,9 +44,9 @@ Build the binary using `Make`.
     nasm -f elf32 -O0 main.s
     ld -m elf_i386 -s -O0 -o main main.o
 
-Run the test script with Python 2:
+Run the test script with Python 3:
 
-    $ python test.py
+    $ python3 test.py
     Success!
     Binary size is 460 bytes.
 
