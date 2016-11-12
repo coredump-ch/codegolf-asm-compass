@@ -31,7 +31,7 @@ Example:
       \_ _/
         S
 
-## Contstraints
+## Constraints
 
 - The code needs to be written in 32 bit Intel (x86) assembly (NASM syntax).
 - No library calls are allowed, use syscalls instead
