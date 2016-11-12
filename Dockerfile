@@ -22,5 +22,5 @@ RUN cp /root/codegolf/Makefile /root/codegolf/test.py /home/codegolf && \
 RUN rm -r /root/codegolf
 
 # Change user and workdir
-USER compass
-WORKDIR /home/compass
+USER codegolf
+WORKDIR /home/codegolf
