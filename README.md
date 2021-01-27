@@ -36,6 +36,31 @@ Example:
 - The code needs to be written in 32 bit Intel (x86) assembly (NASM syntax).
 - No library calls are allowed, use syscalls instead
 
+## Hall of Fame
+
+Sorted by binary size (in bytes).
+
+We used to have a website with an auto-verifier, but it's been offline for a
+few years now. If you have a working solution, send the assembly file and your
+nickname to danilo@coredump.ch and I'll add you to the highscore list!
+
+- ken & tbrunner: 292 bytes (2015-04-20)
+- tbrunner: 328 (2015-04-20)
+- schmijos & rnestler: 336 (2014-10-11)
+- schmijos: 372 (2014-08-11)
+- rnestler: 396 (2014-09-29)
+- Danilo: 436 (2014-10-09)
+- Danilo & Chrigi: 452 (2014-07-25)
+- Stéphane: 536 (2016-08-17)
+- maccesch: 644 (2015-07-27)
+- Matthias: 712 (2016-08-10)
+- rruettimann: 732 (2015-08-17)
+- macav: 752 (2016-02-22)
+- tobias: 768 (2016-02-02)
+- shuber: 820 (2015-07-10)
+- chuvisco88: 820 (2016-09-22)
+- Ali @renuo: 824 (2015-06-24)
+
 ## Verification
 
 Build the binary using `Make`.
